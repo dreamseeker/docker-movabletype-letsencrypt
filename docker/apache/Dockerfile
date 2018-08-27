@@ -55,3 +55,8 @@ RUN apt-get clean \
 # ----------
 RUN a2enmod cgi
 RUN a2enmod rewrite
+
+
+# install composer
+# ----------
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
