@@ -9,7 +9,7 @@ macOS での説明となりますので、他の環境であれば適宜読み�
 1. リポジトリのクローン
 
     ```bash
-    git clone git@github.com:dreamseeker/docker-craft3-letsencrypt.git
+    git clone git@github.com:dreamseeker/docker-movabletype-letsencrypt.git
     ```
 
 2. `.env` ファイルの準備
