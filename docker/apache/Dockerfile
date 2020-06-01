@@ -9,6 +9,7 @@ RUN apt-get update -qq\
     && apt-get install -y --no-install-recommends \
           zlib1g-dev \
           wget \
+          zip \
           unzip \
           sudo \
           git \
