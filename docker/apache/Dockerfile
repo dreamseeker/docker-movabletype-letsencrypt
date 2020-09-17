@@ -5,7 +5,7 @@ FROM php:7.4-apache
 #
 # install PHP modules
 # ----------
-RUN apt-get update -qq\
+RUN apt-get update \
     && apt-get install -y --no-install-recommends \
           libzip-dev \
           wget \
@@ -27,7 +27,8 @@ RUN apt-get update -qq\
           libyaml-syck-perl \
     && docker-php-ext-install zip \
     && docker-php-ext-install pdo_mysql \
-    && docker-php-ext-install mysqli
+    && docker-php-ext-install mysqli \
+    && docker-php-ext-install opcache
 
 
 # install GD
