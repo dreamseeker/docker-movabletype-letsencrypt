@@ -51,6 +51,12 @@ RUN apt-get install -y --no-install-recommends \
     && docker-php-ext-enable imagick
 
 
+# install Xdebug
+# ----------
+RUN pecl install xdebug \
+      && docker-php-ext-enable xdebug
+
+
 # cleanup
 # ----------
 RUN apt-get clean \
